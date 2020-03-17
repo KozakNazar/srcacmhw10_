@@ -45,7 +45,7 @@ void print(char ** list){
 }
 
 int strcmp__withoutCase(char str1[], char str2[]){
-	register int index, str1_tolower, str2_tolower;
+	/*register */int index, str1_tolower, str2_tolower;
 	for (index = 0; str1[index]; ++index){
 		str1_tolower = tolower(str1[index]);
 		str2_tolower = tolower(str2[index]);
@@ -60,7 +60,7 @@ int strcmp__withoutCase(char str1[], char str2[]){
 }
 
 int strcmp_K__withoutCase(char str1[], char str2[]){
-	register int chr1_toupper, chr2_toupper;
+	/*register */int chr1_toupper, chr2_toupper;
 	chr1_toupper = toupper(str1[0]);
 	chr2_toupper = toupper(str2[0]);
 	if (chr1_toupper == FIRST_CH && chr2_toupper != FIRST_CH){
@@ -104,7 +104,7 @@ int main(){
 		"Worse than the mutines in the bilboes. Rashly- "
 		"And prais'd be rashness for it-let us know "
 		"Our indiscretion sometimes serves us well ... "
-		; // — Hamlet, Act 5, Scene 2, 4–8
+		; // â€” Hamlet, Act 5, Scene 2, 4â€“8
 
 #ifdef METHOD_WITH_FORCE_END_STRING
 	char* text_copy = (char*)malloc(MAX_WORDS * MAX_WORD_SIZE * sizeof(char));
