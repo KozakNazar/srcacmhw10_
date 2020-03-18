@@ -8,7 +8,7 @@
 #include <ctype.h>
 #include "string.h"
 
-#define METHOD_WITH_FORCE_END_STRING
+//#define METHOD_WITH_FORCE_END_STRING
 
 #define MAX_WORD_SIZE 64
 #define MAX_WORDS 256
@@ -38,7 +38,7 @@ void print(char ** list){
 	char s[MAX_WORD_SIZE] = { 0 };
 	for (; *list; ++list){
 		memset(s, MAX_WORD_SIZE, sizeof(char));
-		sscanf(*list, "%[^','^'.'^':'^';'^' '^'\t'^'\r'^'\n']", s);
+		(void)sscanf(*list, "%[^','^'.'^':'^';'^' '^'\t'^'\r'^'\n']", s);
 		printf("%s\r\n", s);
 	}
 #endif
