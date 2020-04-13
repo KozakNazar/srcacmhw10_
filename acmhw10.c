@@ -80,7 +80,7 @@ int compareFunction(const void* a, const void* b){
 	const char **arg1 = (const char **)a;
 	const char **arg2 = (const char **)b;
 
-	return strlen(*arg1) - strlen(*arg2);
+	return (int)strlen(*arg1) - (int)strlen(*arg2);
 }
 
 int compareFunction1(const void* a, const void* b){
