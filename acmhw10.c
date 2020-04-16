@@ -46,7 +46,7 @@ void print(char ** list){
 
 int strcmp__withoutCase(char str1[], char str2[]){
 	/*register */int index, str1_tolower, str2_tolower;
-	for (index = 0; str1[index]; ++index){
+	for (index = 0; str1[index] && str2[index]; ++index){
 		str1_tolower = tolower(str1[index]);
 		str2_tolower = tolower(str2[index]);
 
