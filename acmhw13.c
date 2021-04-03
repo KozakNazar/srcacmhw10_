@@ -1,7 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 /*****************************************************************
 * N.Kozak // Lviv'2020 // ACM // Quick Sort extended use example *
-*    file: acmhw10.c                                             *
+*    file: acmhw13.c                                             *
 ******************************************************************/
 #include "stdio.h"
 #include "stdlib.h"
@@ -105,7 +105,7 @@ int main(){
 		"Worse than the mutines in the bilboes. Rashly- "
 		"And prais'd be rashness for it-let us know "
 		"Our indiscretion sometimes serves us well ... "
-		; // — Hamlet, Act 5, Scene 2, 4–8
+		; // â€” Hamlet, Act 5, Scene 2, 4â€“8
 
 #ifdef METHOD_WITH_FORCE_END_STRING
 	char* text_copy = (char*)malloc(MAX_WORDS * MAX_WORD_SIZE * sizeof(char));
